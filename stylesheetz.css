@@ -1,0 +1,26 @@
+﻿p, body {
+    background-color:rgb(28, 37, 25);
+    text-align:center;
+}
+footer {
+    background-color: rgba(8, 8, 3, 0.007);
+    color: rgb(0, 231, 50);
+}
+
+#contact {
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+#style1 {
+    background-color: rgb(89, 184, 80);
+}
+
+footer2 {
+    color: rgb(0, 231, 50);
+
+}
+
+h2 {
+    color: rgb(83, 83, 83);
+}
