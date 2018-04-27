@@ -1,26 +1,40 @@
-﻿p, body {
+﻿
+body {
+    background-image: url(bg1.jpg);
     background-color:rgb(28, 37, 25);
     text-align:center;
 }
-footer {
-    background-color: rgba(8, 8, 3, 0.007);
-    color: rgb(0, 231, 50);
-}
 
-#contact {
-    background-color: rgba(0, 0, 0, 0);
-
-}
-
-#style1 {
-    background-color: rgb(89, 184, 80);
-}
-
-footer2 {
-    color: rgb(0, 231, 50);
-
+#Headline {
+    background-color: rgba(19, 231, 65, 0.911);
+    color: rgb(2, 5, 3);
 }
 
 h2 {
     color: rgb(83, 83, 83);
 }
+
+#Timetable {
+    font-size: 19px;
+    position:relative;
+    left: 1px;
+    width: 500px;
+    height: 190.5px;
+    padding: 0;
+    margin: 0 auto;
+    background-color: rgba(179, 156, 27, 0);
+    color: rgb(26, 173, 87);
+    border:solid 1px rgb(0, 255, 179)
+    
+    
+
+}
+
+#contact {
+    color: rgba(177, 177, 179, 0.541);
+}
+
+#Line {
+    color: rgb(7, 243, 7)
+}
+
