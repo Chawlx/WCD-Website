@@ -1,9 +1,10 @@
 ﻿
 body {
-    background-image: url(bg1.jpg);
+    
     
     background-color:rgb(28, 37, 25);
     text-align:center;
+    background-image: url(bg1.jpg)
 }
 
 #Headline {
