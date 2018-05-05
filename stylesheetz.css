@@ -1,42 +1,114 @@
-﻿
-body {
-    
-    
-    background-color:rgb(28, 37, 25);
-    text-align:center;
-    background-image: url(Illustration9.jpg);
+﻿/* 
+   Revisions Bookstore and Cafe stylesheet 
+   Filename: stylesheetz.css
+
+   Author: Chaw Li Xiang  
+   Date: 27/04/2018    
+   HTML5 and CSS3 Illustrated Unit D, Visual Workshop
+ */
+
+/*reset*/
+article,body, div, footer,header, aside,h1, h2, p
+{
+    border:0;
+    padding:0;
+    margin:0;
 }
 
-#Headline {
-    background-color: rgba(19, 231, 65, 0.911);
-    color: rgb(2, 5, 3);
-}
-
-h2 {
-    color: rgb(83, 83, 83);
-}
-
-#Timetable {
-    font-size: 19px;
-    position:relative;
-    left: 1px;
-    width: 500px;
-    height: 190.5px;
-    padding: 0;
+/*body and page container*/
+body div.Box
+{
+    background-color:white;
+    max-width: 650px;
     margin: 0 auto;
-    background-color: rgba(179, 156, 27, 0);
-    color: rgb(26, 173, 87);
-    border:solid 1px rgb(0, 255, 179)
+    border-bottom: 0 solid navy;
+    border-top: 0 solid navy;
+    border-right: 0 solid navy;
+    border-left:0  solid navy;
+    box-shadow: 0 2px 4px 1px rgb(119,119,119);
+}
+
+/*heading*/
+header
+{
+    padding: 0.5em;
+    text-align: center;
+    color: navy;
+    background-color: lightblue;
+    font-weight: bold;
     
+}
+
+/*revisions...cafe*/
+h1
+{
+    padding: 0.3em;
+}
+
+
+/*events*/
+article 
+{
+    background-color: burlywood;
+    float: right;
+    width:62%;
+    padding: 3%;
+    float: left;
     
-
 }
 
-#contact {
-    color: rgba(177, 177, 179, 0.541);
+article div.Box
+{
+    padding: 2%;
+    background-color: white;
 }
 
-#Line {
-    color: rgb(7, 243, 7)
+/*Upcoming Events*/
+article h2
+{
+    margin-bottom: 0.5em;
 }
+
+/*article texts*/
+article p
+{
+    margin: 0 0 0.9em 1em;
+    
+}
+
+/*sidebar*/
+aside 
+{
+    width:28%;
+    padding: 2%;
+    float: right;
+    background-color: white;
+}
+
+/*leftbox texts*/
+aside p
+{
+    
+    padding: 0.4em; 
+    margin-bottom: 0.6em;
+}
+
+/*footer/contacts*/
+footer 
+{
+    padding: 0.5em;
+    text-align: right;
+    color: navy;
+    background-color: lightblue;
+    clear: both;
+    
+}
+/*footer texts*/
+footer p
+{
+    margin: 0.6% 0.7% ;
+}
+
+
+
 
