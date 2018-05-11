@@ -82,9 +82,9 @@ nav.sitenavigation
     width: auto;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
-    color: rgba(255, 255, 255, 0.533);
+    color: rgba(255, 255, 255, 0.473);
     text-align: center;
-    background-color: #000000;
+    background-color: black;
 }
 nav.sitenavigation p
 {
