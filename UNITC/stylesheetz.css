@@ -1,10 +1,13 @@
 ﻿
 body {
-    background-image: url(bg1.jpg);
+    
+    background: url("bg1.jpg");
     background-color:rgb(28, 37, 25);
     text-align:center;
     background-repeat: no-repeat;
     background-size: 100%;
+    
+    
 }
 
 #Headline {
@@ -27,9 +30,6 @@ h2 {
     background-color: rgba(179, 156, 27, 0);
     color: rgb(26, 173, 87);
     border:solid 1px rgb(0, 255, 179)
-    
-    
-
 }
 
 #contact {
