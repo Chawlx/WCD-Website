@@ -1,0 +1,214 @@
+/*
+Revisions Bookstore and Cafe style sheet
+Filename: stylesheetz.css
+
+Author: CHAW LI XIANG
+Date: 7/5/2018
+HTML5 and CSS3 Illustrated Unit F, Visual Workshop
+*/
+
+/*reset styles */
+html {font-size: 12px;}
+
+article, body, div, footer , header, h1,h2, img, nav, p
+{
+    border:0;
+    padding:0;
+    margin:0;
+}
+
+/*body and page container*/
+body
+{
+    background-image: url("./images/books.png");
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: rgb(253,245,230);
+}
+
+.box
+{
+    max-width:800px;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+}
+
+p
+{
+    font-size:1.4em;
+}
+
+/* skip navigation link */
+p.skipnavigation a 
+{
+    position: absolute;
+    left: -10000px;
+}
+
+p.skipnavigation a:focus
+{
+    left: 1em;
+    top: 1em;
+    background-color: white;
+    color: black;
+}
+
+
+/*link colors*/
+a:link
+{
+    text-decoration: none; /*removing text underline*/
+    color: white;
+}
+
+a:visited
+{
+    color: #888;
+}
+
+/*link that is currently being clicked*/
+a:active
+{
+    position:relative;
+    top:1px;
+    left:1px;
+}
+
+a:hover, a:focus
+{
+    color:lightblue;
+}
+
+/*header section*/
+header
+{
+    padding: 0 1%;
+    text-align: center;
+    background-color: #bdccd4;
+    font-family: "Playfair Display", Georgia, "Times New Roman", Times, serif;
+    font-weight: 900;
+    overflow: auto;
+}
+header h1
+{
+    width: 74%;
+    font-size: 3.2em;
+    margin-top: 5%;
+    float:right;
+}
+
+/* site navigation bar */
+nav.sitenavigation
+{
+    width: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.473);
+    text-align: center;
+    background-color: black;
+    overflow:auto;
+}
+nav.sitenavigation p
+{
+    display: inline-block;
+    margin: 0.2em 0.6em;
+}
+
+nav.sitenavigation div
+{
+    width: 74%;
+    float: right;
+    text-align: center;
+}
+
+nav.sitenavigation a:link
+{
+    text-decoration: none;
+    color: white;
+}
+
+nav.sitenavigation a:hover, nav.sitenavigation a:focus
+{
+    color:black;
+    background-color: white;
+}
+
+
+/*main content*/
+article
+{
+    width:62%;
+    padding: 3%;
+    float: left;
+    background-color: #c69c6d;
+}
+
+article div.box{
+    padding: 3%;
+    background-color: white;
+    overflow: auto;
+}
+
+article h2{
+    margin-bottom: 0.4em;
+    font-family: "Playfair Display", Georgia, 'Times New Roman', Times, serif;
+    font-weight:900;
+    font-size: 2em;
+}
+
+article p{
+    margin: 0 0 0.8em 1em;
+}
+
+article span
+{
+    font-weight: bold;
+}
+
+/*sidebar*/
+aside
+{
+    width: 28%;
+    padding: 2%;
+    float: right;
+}
+aside p
+{
+    margin-bottom: 0.6em;
+    padding: 0.6em;
+    font-size: 1.6em;
+    text-align: left;
+}
+
+/*footer section */
+footer
+{
+    padding: 0.5em;
+    clear: both;
+    text-align: right;
+    background-color: #bdccd4;
+}
+
+/*print stylesheetz*/
+@media print
+{
+    body, h1, article, footer
+    {
+        background-color: rgb(255,255,255);
+    }
+    body
+    {
+        max-width: 100%;
+    }
+}
+
+@page 
+{
+    margin: 0.75in;
+}
+
+/* browsing image*/
+.browsing-img
+{
+    float: right;
+}
