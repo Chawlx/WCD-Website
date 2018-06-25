@@ -10,7 +10,7 @@ HTML5 and CSS3 Illustrated Unit F, Visual Workshop
 /*reset styles */
 html {font-size: 12px;}
 
-article, body, div, footer , header, h1,h2, img, nav, p
+article, body, div, footer , header, h1,h2, img, nav, p, table, tbody, td, th, tr
 {
     border:0;
     padding:0;
@@ -24,6 +24,24 @@ body
     font-family: Verdana, Geneva, sans-serif;
     background-color: rgb(253,245,230);
 }
+
+.events
+{
+    border: solid 5px black;
+    border-collapse: collapse;
+}
+
+.events th, .events td
+{
+    border: solid 1px black;
+    padding: 7px;
+    font-size: 16px;
+}
+
+.events th
+{
+background-color: rgb(214, 197, 197);
+}   
 
 .box
 {
