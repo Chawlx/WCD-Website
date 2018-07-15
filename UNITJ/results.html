@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Revisions Bookstore &amp; Cafe - Upcoming Events</title>
+        <!--
+            Revisions Bookstore and Cafe Upcoming Events page
+            Filename: results.html
+
+            Author: CHAW LI XIANG
+            Date: 13 July 2018
+            HTML5 and CSS3 Illustrated Unit I, Visual Workshop
+        -->
+        <link rel="apple-touch-icon" href="./images/apple-touch-icon.png"/>
+        <link rel="icon" sizes="192x192" href="./images/android.png">
+        <link rel="shortcut icon" href="./images/favicon.ico">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <script src = "modernizr.custom.40753.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="stylesheetz.css">
+    </head>
+    <body>
+        <div class="container">
+            <header> <!--header-->
+                <h1>Revisions Bookstore &amp; Cafe</h1>
+                <div><img src = "./images/logo.gif" width="120" height="100" alt=""></div>
+            </header>
+            <nav class="sitenavigation">
+                <div class="navigation-menu-button">
+                    <img src="images/menu.png" width="63" height="57" alt="Show navigation">
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="releases.html">New Releases</a></li>
+                    <li><a href="signup.html">Sign up</a></li>
+                    <li><a href="https://goo.gl/maps/bwf5R" target="_blank">Location</a></li>
+                </ul>
+            </nav>
+                <article>
+                    <div class="box">
+                        <h2>Your form has been submitted!</h2>
+                        <h3>You have entered the following data:</h3>
+                        <script>
+                            var formData = location.search;
+                            formData = formData.substring(1, formData.length);
+                            while (formData.indexOf("+") !== -1)
+                            {
+                                formData = formData.replace("+", " ");
+                            }
+
+                            formData = decodeURIComponent(formData);
+                            var formArray = formData.split("&");
+                            for (var i = 0; i < formArray.length; i = i + 1)
+                            {
+                                document.write("<p> " + formArray[i] + "</p>");
+                            }
+                        </script>
+                            
+                    </div>
+                        
+            </article>
+            <aside> <!--aside-->
+                <p>Custom brewed coffee and hand-selected books.</p>
+                <p>Special orders are our specialty.</p>
+            </aside>
+            <footer> <!--footer-->
+                <p>412 N. 25th St.</p>
+                <p>Rishmondl, VA 23223</p>
+                <p>(804) 555-2565</p>
+            </footer>
+        </div>
+    </body>
+</html>

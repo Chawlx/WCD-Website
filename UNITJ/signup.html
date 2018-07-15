@@ -4,10 +4,10 @@
         <title>Revisions Bookstore &amp; Cafe - Upcoming Events</title>
         <!--
             Revisions Bookstore and Cafe Upcoming Events page
-            Filename: events.html
+            Filename: signup.html
 
             Author: CHAW LI XIANG
-            Date: 9 July 2018
+            Date: 13 July 2018
             HTML5 and CSS3 Illustrated Unit I, Visual Workshop
         -->
         <link rel="apple-touch-icon" href="./images/apple-touch-icon.png"/>
@@ -20,10 +20,10 @@
         <link rel="stylesheet" href="stylesheetz.css">
     </head>
     <body>
-        <div class="box">
+        <div class="container">
             <header> <!--header-->
-                <img src = "./images/logo.gif">
                 <h1>Revisions Bookstore &amp; Cafe</h1>
+                <div><img src = "./images/logo.gif" width="120" height="100" alt=""></div>
             </header>
             <nav class="sitenavigation">
                 <div class="navigation-menu-button">
@@ -37,55 +37,57 @@
                     <li><a href="https://goo.gl/maps/bwf5R" target="_blank">Location</a></li>
                 </ul>
             </nav>
+                <article>
+                    <div class="box">
+                        <h2>Book Groups</h2>
+                        <h3>Sign Up Form</h1>
+                        <form action="results.html">
+                            <fieldset class="contactinfo">
+                                <legend>Contact Information</legend>
+                                <label for="nameinput">
+                                    First Name: <input type="text" name="First Name" id="firstnameinput" placeholder="First Name">
+                                    Last Name: <input type="text" name="Last Name" id="lastnameinput" placeholder="Last Name">
+                                </label>
 
-            <div class="container">
-                <h1>Sign Up Form</h1>
-                <form method="POST" action="chawlixiang98@gmail.com">
-                    <fieldset>
-                        <legend>Contact Information</legend>
-                        <label for="Name">First Name:
-                            <input type="text" name="input" id="FirstName" value="" placeholder="First Name">
-                        </label>
-                        <label for="Name">Last Name:
-                            <input type="text" name="input" id="LastName" value="" placeholder="Last Name">
-                        </label>
-                        <label for="Name">Email:
-                            <input type="text" name="input" id="Email" value="" placeholder="address@example.com">
-                        </label>
-                        <label for="Name">Phone:
-                            <input type="text" name="input" id="Phone" value="">
-                        </label>
+                                <label for="emailinput">
+                                    Email: <input type="text" name="Email" id="emailinput" placeholder="address@example.com">
+                                </label>
 
-                    <div>
-                        Working?
-                        <label for="yes">
-                                <input type="radio" name="working" id="yes" value="yes">Yes
-                        </label>
-                        <label for="no">
-                                <input type="radio" name="working" id="no" value="no">No
-                        </label>
+                                <label for="phoneinput">
+                                    Phone: <input type="text" name="Phone Number" id="phoneinput" placeholder="">
+                                </label>
+                            </fieldset>
+
+                            <fieldset class="preferred">
+                                <legend>Preferred Contact Method</legend>
+                                <label for="preferredinput">
+                                    <input type="radio" name="Prefered Contact Method" id="email" value="Email" checked> Email
+                                    <input type="radio" name="Prefered Contact Method" id="phone" value="Phone"> Phone
+                                    <input type="radio" name="Prefered Contact Method" id="either" value="Either"> Either
+                                </label>
+                            </fieldset>
+                            <fieldset class="TOI">
+                                <legend>Topic(s) of Interest</legend>
+                                <label for="toi">
+                                        <li><input type="checkbox" name="interest" id="AAW" value="AAW">African America Writers</li>
+                                        <li><input type="checkbox" name="interest" id="Mystery" value="Mystery">Mystery</li>
+                                        <li><input type="checkbox" name="interest" id="Science F/F" value="Science F/F">Science Fiction/Fantasy</li>
+                                        <li><input type="checkbox" name="interest" id="Short Fiction" value="Short Fiction">Short Fiction</li>
+                                        <li><input type="checkbox" name="interest" id="virginia history" value="virginia history">Virginia History</li>
+                                        <li><input type="checkbox" name="interest" id="others" value="others">Others(please specify below)</li>
+                                </label>
+                            </fieldset>
+                            <fieldset class="Additionalinfo">
+                                <legend>Additional Informtion</legend>
+                                <label for="additionalinfo">
+                                    Questions or topic idea for new writing group
+                                    <textarea class="area" rows="12" cols="55"></textarea>
+                                </label>
+                            </fieldset>
+                                <input type="submit" id="submit" value="Submit">
+                        </form>
                     </div>
-
-                    <select name="mychoice">
-                        <option value="1">Option 1</option>
-                        <option value="1">Option 2</option>
-                        <option value="1">Option 3</option>
-                    </select>
-
-                    <label for="comments">Comments: </label>
-                    <textarea name="comments" id="comments" cols="50" rows= "10" placeholder="text"></textarea>
-
-
-
-
-                    </fieldset>
-                    <input type="submit" name="submit" id="submit" value="Submit"> <!--"button" is just as button, not a sumbit button use "Submit" instead-->
-                </form>
-
-
-
-            </div>
-
+            </article>
             <aside> <!--aside-->
                 <p>Custom brewed coffee and hand-selected books.</p>
                 <p>Special orders are our specialty.</p>
