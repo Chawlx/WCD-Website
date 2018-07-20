@@ -4,10 +4,10 @@
         <title>Revisions Bookstore &amp; Cafe - Upcoming Events</title>
         <!--
             Revisions Bookstore and Cafe Upcoming Events page
-            Filename: signup.html
+            Filename: events.html
 
             Author: CHAW LI XIANG
-            Date: 13 July 2018
+            Date: 9 July 2018
             HTML5 and CSS3 Illustrated Unit I, Visual Workshop
         -->
         <link rel="apple-touch-icon" href="./images/apple-touch-icon.png"/>
@@ -54,18 +54,19 @@
                                 </label>
 
                                 <label for="phoneinput">
-                                    Phone: <input type="text" name="Phone Number" id="phoneinput" placeholder="">
+                                    Phone: <input type="text" name="phone number" id="phoneinput" placeholder="">
                                 </label>
                             </fieldset>
 
                             <fieldset class="preferred">
                                 <legend>Preferred Contact Method</legend>
                                 <label for="preferredinput">
-                                    <input type="radio" name="Prefered Contact Method" id="email" value="Email" checked> Email
-                                    <input type="radio" name="Prefered Contact Method" id="phone" value="Phone"> Phone
-                                    <input type="radio" name="Prefered Contact Method" id="either" value="Either"> Either
+                                    <input type="radio" name="Preferedcontactmethod" id="email" value="Email" checked> Email
+                                    <input type="radio" name="Preferedcontactmethod" id="phone" value="Phone"> Phone
+                                    <input type="radio" name="Preferedcontactmethod" id="either" value="Either"> Either
                                 </label>
                             </fieldset>
+
                             <fieldset class="TOI">
                                 <legend>Topic(s) of Interest</legend>
                                 <label for="toi">
@@ -77,18 +78,48 @@
                                         <li><input type="checkbox" name="interest" id="others" value="others">Others(please specify below)</li>
                                 </label>
                             </fieldset>
+
                             <fieldset class="Additionalinfo">
                                 <legend>Additional Informtion</legend>
                                 <label for="additionalinfo">
                                     Questions or topic idea for new writing group
-                                    <textarea class="area" name="Topic ideas" rows="12" cols="55"></textarea>
+                                    <textarea class="area" name="area" rows="12" cols="55"></textarea>
                                 </label>
                             </fieldset>
-                                <input type="submit" id="submit" value="Submit">
+
+
+
+                            <fieldset class="others">
+                                <div>
+                                    Working?
+                                    <label for="yes">
+                                            <input type="radio" name="working" id="yes" value="yes">Yes
+                                    </label>
+                                    <label for="no">
+                                            <input type="radio" name="working" id="no" value="no">No
+                                    </label>
+                                </div>
+
+                                <select name="mychoice">
+                                    <option value="1">Option 1</option>
+                                    <option value="1">Option 2</option>
+                                    <option value="1">Option 3</option>
+                                </select>
+
+                                <label for="comments">Comments: </label>
+                                <textarea name="comments" id="comments" cols="50" rows= "10" placeholder="text"></textarea>
+                            </fieldset>
+
+
+
+
+                            
+                                <input type="submit" name="submit" id="submit" value="Submit"> <!--"button" is just as button, not a sumbit button use "Submit" instead-->
+                            
                         </form>
-                        <div id="canvas">
-                            <div id="target"></div>
-                        </div>
+
+
+
                     </div>
             </article>
             <aside> <!--aside-->
