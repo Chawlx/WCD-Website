@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Unit M demo 2</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="unitm2.css">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Demo on Forms</h1>
+            <!-- <form method="POST" action="https://script.google.com/a/macros/sp.edu.sg/s/AKfycbwq-jverXc4qys51XtKf7wn_DXYvwZajaThHT4reI325Ozi_c3j/exec"> -->
+            <form>
+                <fieldset>
+                    <legend>DIT 1A04</legend>
+                    <label for="ameen">Name: 
+                        <input type="text" name="Ameen"
+                            id="ameen" placeholder="type in your name here">
+                    </label>
+                    <div>
+                        Working? 
+                        <label for="yes">
+                            <input type="radio" name="working"
+                                id="yes" value="yes">
+                                Yes 
+                        </label>
+                        <label for="no">
+                            <input type="radio" name="working"
+                                id="no" value="no">
+                                No 
+                        </label>
+                    </div>
+                    <label for="modules">Favourite Module</label>
+                    <select name="mychoice" id="modules">
+                        <option value="1">module 1</option>
+                        <option value="2">module 2</option>
+                        <option value="3">module 3</option>
+                    </select>
+                    <div>
+                        <label for="comments">Comments: </label>
+                        <textarea name="comments" id="comments" 
+                            cols="50" rows="10"></textarea>
+                    </div>
+                    <div id="feedback"></div>
+                </fieldset>
+                <input type="button" id="mybutton" name="submit" value="Submit">
+            </form>
+
+            <div id="canvas">
+                <div id="target"></div>
+            </div>
+        </div>
+        <!-- put script here so that everything loaded -->
+        <script src="unitm2.js"></script>
+    </body>
+</html>
