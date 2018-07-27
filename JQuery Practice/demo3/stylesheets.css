@@ -1,0 +1,14 @@
+*{text-decoration: none;}
+
+div.box{
+  border: solid 1px black;
+
+  width:  40%;
+  
+  
+}
+
+#single_image img{
+ 
+  margin: 5px;
+}
